@@ -1,6 +1,7 @@
 import Carousel from "./component/Carousel";
 import FullAccrodian from "./component/FullAccrodian";
 import Navbar from "./component/Header";
+import NewsLetter from "./component/NewsLetter";
 import SingleCard from "./component/SingleCard";
 import TestimonialSection from "./component/TestimonialSection";
 
@@ -15,6 +16,7 @@ export default function App() {
       <TestimonialSection />
       <h1 className="text-2xl sm:text-4xl md:text-5xl mt-16 mb-16  text-center">Frequently Asked Questions</h1>
       <FullAccrodian  />
+      <NewsLetter />
 
     </>
   )
