@@ -27,7 +27,6 @@ export default function AccordionExpandDefault() {
           <Typography
               sx={{
                 fontSize: '20px',          
-                // fontWeight: 'bold',        
                 color: '#000',             
                 textAlign: 'center',       
                 marginBottom: '10px',   
@@ -47,6 +46,7 @@ export default function AccordionExpandDefault() {
       <Accordion 
         sx={{
             marginTop: "15px",
+            color: '#000', 
         }}
       >
         <AccordionSummary
@@ -54,7 +54,11 @@ export default function AccordionExpandDefault() {
           aria-controls="panel2-content"
           id="panel2-header"
         >
-          <Typography>Header</Typography>
+          <Typography
+              sx={{
+                fontSize: '20px',  
+              }}
+          >Header</Typography>
         </AccordionSummary>
         <AccordionDetails>
           <Typography
@@ -68,6 +72,7 @@ export default function AccordionExpandDefault() {
       <Accordion 
         sx={{
             marginTop: "15px",
+            color: '#000', 
         }}
       >
         <AccordionSummary
@@ -75,7 +80,11 @@ export default function AccordionExpandDefault() {
           aria-controls="panel2-content"
           id="panel2-header"
         >
-          <Typography>Header</Typography>
+          <Typography
+              sx={{
+                fontSize: '20px',  
+              }}
+          >Header</Typography>
         </AccordionSummary>
         <AccordionDetails>
           <Typography
@@ -89,6 +98,7 @@ export default function AccordionExpandDefault() {
       <Accordion 
         sx={{
             marginTop: "15px",
+            color: '#000', 
         }}
       >
         <AccordionSummary
@@ -96,7 +106,11 @@ export default function AccordionExpandDefault() {
           aria-controls="panel2-content"
           id="panel2-header"
         >
-          <Typography>Header</Typography>
+          <Typography
+              sx={{
+                fontSize: '20px',  
+              }}
+          >Header</Typography>
         </AccordionSummary>
         <AccordionDetails>
           <Typography
@@ -110,6 +124,7 @@ export default function AccordionExpandDefault() {
       <Accordion 
         sx={{
             marginTop: "15px",
+            color: '#000', 
         }}
       >
         <AccordionSummary
@@ -117,7 +132,11 @@ export default function AccordionExpandDefault() {
           aria-controls="panel2-content"
           id="panel2-header"
         >
-          <Typography>Header</Typography>
+          <Typography
+              sx={{
+                fontSize: '20px',  
+              }}
+          >Header</Typography>
         </AccordionSummary>
         <AccordionDetails>
           <Typography
