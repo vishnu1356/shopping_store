@@ -3,7 +3,7 @@ import React from 'react'
 function NewsLetter() {
     return (
         <div>
-            <div className=" p-10 rounded-lg shadow-xl mb-20">
+            <div className=" p-10 rounded-lg shadow-xl mb-4   md:mb-20 w-[90%] mx-auto">
                 <div className="container mx-auto flex flex-col lg:flex-row items-center justify-between space-y-8 lg:space-y-0">
                     <div className="text-center lg:text-left space-y-4 lg:w-1/2">
                         <h2 className="text-4xl font-semibold">Stay Updated!</h2>

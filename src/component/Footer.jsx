@@ -4,11 +4,11 @@ function Footer() {
     return (
         <div>
             <footer className="bg-white dark:bg-gray-900 text-gray-700 dark:text-gray-200">
-                <div className="mx-auto w-[80%] max-w-screen-xl px-4 py-6 lg:py-8">
-                    <div className="grid grid-cols-2 gap-8 md:grid-cols-4">
+                <div className="mx-auto w-[90%] max-w-screen-xl px-4 py-6 lg:py-8">
+                    <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
                         {/* Company Section */}
                         <div>
-                            <h2 className="mb-6 text-xl font-semibold text-gray-900 uppercase dark:text-white ">Company</h2>
+                            <h2 className="mb-6 text-xl font-semibold text-gray-900 uppercase dark:text-white">Company</h2>
                             <ul className="text-gray-500 dark:text-gray-400 font-medium">
                                 <li className="mb-4">
                                     <a href="#" className="hover:text-gray-900 dark:hover:text-white transition-colors">About</a>
@@ -60,7 +60,7 @@ function Footer() {
                             </ul>
                         </div>
 
-                        {/* Download Section */}
+                        {/* Contact Section */}
                         <div>
                             <h2 className="mb-6 text-xl font-semibold text-gray-900 uppercase dark:text-white">Contact</h2>
                             <ul className="text-gray-500 dark:text-gray-400 font-medium">
@@ -81,13 +81,13 @@ function Footer() {
 
                     </div>
 
-                    <div className="px-4 py-6 w-[95%]  dark:bg-gray-700 md:flex md:items-center md:justify-between">
+                    <div className="px-4 py-6 w-[95%] dark:bg-gray-700 md:flex md:items-center md:justify-between">
                         <span className="text-xl text-gray-500 dark:text-gray-300 sm:text-center">
                             © 2024 <a href="https://flowbite.com/" className="hover:text-gray-900 dark:hover:text-white">Vishnu Kumar™</a>. All Rights Reserved.
                         </span>
                         <div className="flex mt-4 sm:justify-center md:mt-0 space-x-5 rtl:space-x-reverse">
                             {/* Social Icons */}
-                            <a href="#" className="text-gray-400  hover:text-gray-900 dark:hover:text-white transition-colors">
+                            <a href="#" className="text-gray-400 hover:text-gray-900 dark:hover:text-white transition-colors">
                                 <svg className="w-6 h-6" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 8 19">
                                     <path fillRule="evenodd" d="M6.135 3H8V0H6.135a4.147 4.147 0 0 0-4.142 4.142V6H0v3h2v9.938h3V9h2.021l.592-3H5V3.591A.6.6 0 0 1 5.592 3h.543Z" clipRule="evenodd" />
                                 </svg>

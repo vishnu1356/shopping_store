@@ -3,7 +3,7 @@ import VideoURL from "../assets/image/faqvideo.mp4"
 import AccordionExpandDefault from './Accordian';
 function FullAccrodian() {
     return (
-        <div className='flex justify-around gap-8 mb-20'>
+        <div className='flex justify-around gap-8 mb-0 md:mb-20'>
             <div className='mt-10 hidden md:block'>
                 <video
                     src={VideoURL}
