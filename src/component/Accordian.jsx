@@ -10,10 +10,11 @@ export default function AccordionExpandDefault() {
   return (
     <Box
       sx={{
-        maxWidth: '900px',        // Restrict the width
+        maxWidth: '700px',        // Restrict the width
         width: '100%',            // Make it responsive, so it takes full width until maxWidth
-        margin: '2rem auto',      // Center the accordion with margin from top and bottom
-        padding: '20px',          // Add padding for some space around the accordion
+        margin: '0 auto',      // Center the accordion with margin from top and bottom
+        padding: '20px',   
+        backgroundColor: '#f5f5f5',
       }}
     >
       {/* First Accordion */}
@@ -29,20 +30,25 @@ export default function AccordionExpandDefault() {
                 // fontWeight: 'bold',        
                 color: '#000',             
                 textAlign: 'center',       
-                marginBottom: '10px',      
+                marginBottom: '10px',   
+
 
               }}
           >Expanded by default</Typography>
         </AccordionSummary>
         <AccordionDetails>
-          <Typography>
+          <Typography >
             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse malesuada lacus ex, sit amet blandit leo lobortis eget.
           </Typography>
         </AccordionDetails>
       </Accordion>
 
       {/* Second Accordion */}
-      <Accordion>
+      <Accordion 
+        sx={{
+            marginTop: "15px",
+        }}
+      >
         <AccordionSummary
           expandIcon={<ExpandMoreIcon />}
           aria-controls="panel2-content"
@@ -51,13 +57,19 @@ export default function AccordionExpandDefault() {
           <Typography>Header</Typography>
         </AccordionSummary>
         <AccordionDetails>
-          <Typography>
+          <Typography
+
+          >
             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse malesuada lacus ex, sit amet blandit leo lobortis eget.
           </Typography>
         </AccordionDetails>
       </Accordion>
       {/* Third Accordion */}
-      <Accordion>
+      <Accordion 
+        sx={{
+            marginTop: "15px",
+        }}
+      >
         <AccordionSummary
           expandIcon={<ExpandMoreIcon />}
           aria-controls="panel2-content"
@@ -66,13 +78,19 @@ export default function AccordionExpandDefault() {
           <Typography>Header</Typography>
         </AccordionSummary>
         <AccordionDetails>
-          <Typography>
+          <Typography
+
+          >
             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse malesuada lacus ex, sit amet blandit leo lobortis eget.
           </Typography>
         </AccordionDetails>
       </Accordion>
       {/* Fourth Accordion */}
-      <Accordion>
+      <Accordion 
+        sx={{
+            marginTop: "15px",
+        }}
+      >
         <AccordionSummary
           expandIcon={<ExpandMoreIcon />}
           aria-controls="panel2-content"
@@ -81,13 +99,19 @@ export default function AccordionExpandDefault() {
           <Typography>Header</Typography>
         </AccordionSummary>
         <AccordionDetails>
-          <Typography>
+          <Typography
+
+          >
             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse malesuada lacus ex, sit amet blandit leo lobortis eget.
           </Typography>
         </AccordionDetails>
       </Accordion>
       {/* Fifth Accordion */}
-      <Accordion>
+      <Accordion 
+        sx={{
+            marginTop: "15px",
+        }}
+      >
         <AccordionSummary
           expandIcon={<ExpandMoreIcon />}
           aria-controls="panel2-content"
@@ -96,7 +120,9 @@ export default function AccordionExpandDefault() {
           <Typography>Header</Typography>
         </AccordionSummary>
         <AccordionDetails>
-          <Typography>
+          <Typography
+
+          >
             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse malesuada lacus ex, sit amet blandit leo lobortis eget.
           </Typography>
         </AccordionDetails>

@@ -1,5 +1,5 @@
-import AccordionExpandDefault from "./component/Accordian";
 import Carousel from "./component/Carousel";
+import FullAccrodian from "./component/FullAccrodian";
 import Navbar from "./component/Header";
 import SingleCard from "./component/SingleCard";
 import TestimonialSection from "./component/TestimonialSection";
@@ -14,7 +14,7 @@ export default function App() {
       <SingleCard />
       <TestimonialSection />
       <h1 className="text-2xl sm:text-4xl md:text-5xl mt-16 mb-16  text-center">Frequently Asked Questions</h1>
-      <AccordionExpandDefault />
+      <FullAccrodian  />
 
     </>
   )
