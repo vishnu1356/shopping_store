@@ -14,7 +14,7 @@ export default function AccordionExpandDefault() {
         width: '100%',            // Make it responsive, so it takes full width until maxWidth
         margin: '0 auto',      // Center the accordion with margin from top and bottom
         padding: '20px',   
-        backgroundColor: '#f5f5f5',
+        // backgroundColor: '#f5f5f5',
       }}
     >
       {/* First Accordion */}
