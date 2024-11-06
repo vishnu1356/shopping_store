@@ -7,7 +7,7 @@ export default function App() {
     <>
       <Navbar />
       <Carousel />
-      <h1 className="text-3xl sm:text-4xl md:text-5xl mt-16 mb-16 font-semibold text-center">Welcome to shopping Store!</h1>
+      <h1 className="text-2xl sm:text-4xl md:text-5xl mt-16 mb-16  text-center">OUR TRENDY PRODUCTS!</h1>
 
       <SingleCard />
 
