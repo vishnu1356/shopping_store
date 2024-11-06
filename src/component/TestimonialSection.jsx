@@ -45,16 +45,16 @@ const TestimonialSection = () => {
               className="testimonial-slider"
               breakpoints={{
                 250: {
-                  slidesPerView: 1, // Show 1 slide on small screens (<= 640px)
+                  slidesPerView: 1, 
                 },
                 320: {
-                  slidesPerView: 1, // Show 1 slide on small screens (<= 640px)
+                  slidesPerView: 1, 
                 },
                 640: {
-                  slidesPerView: 1, // Show 1 slide on small screens (<= 640px)
+                  slidesPerView: 1, 
                 },
                 1024: {
-                  slidesPerView: 2, // Show 2 slides on large screens (>= 1024px)
+                  slidesPerView: 2, 
                 },
               }}
             >
@@ -121,6 +121,7 @@ const TestimonialSection = () => {
                   </div>
                 </div>
               </SwiperSlide>
+              
             </Swiper>
           </div>
         </div>

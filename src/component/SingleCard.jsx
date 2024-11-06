@@ -12,7 +12,7 @@ function SingleCard() {
             </div>
 
             <div className='flex justify-center flex-wrap gap-8 mt-12 mb-12'>
-                <div className="w-full max-h-[450px] max-w-xs mt-6 bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">
+                <div className="w-full bg-gray-100 hover:shadow-xl max-h-[450px] max-w-xs mt-6  border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">
                     <a href="#">
                         <img className="p-4 rounded-t-lg  h-[300px] w-[400px] object-contain" src="https://m.media-amazon.com/images/I/71J3zo5sGlL._AC_UY1000_.jpg" alt="product image" />
                     </a>
@@ -43,7 +43,7 @@ function SingleCard() {
                         </div>
                     </div>
                 </div>
-                <div className="w-full max-h-[450px] max-w-xs mt-6 bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">
+                <div className="w-full max-h-[450px] max-w-xs mt-6 bg-gray-100 hover:shadow-xl border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">
                     <a href="#">
                         <img className="p-8 rounded-t-lg  h-[300px] w-[400px]" src="https://hips.hearstapps.com/vader-prod.s3.amazonaws.com/1721661703-mhl-tshirts-rhone-252-669e79021e027.jpg?crop=1xw:1xh;center,top&resize=980:*" alt="product image" />
                     </a>
@@ -74,7 +74,7 @@ function SingleCard() {
                         </div>
                     </div>
                 </div>
-                <div className="w-full max-h-[450px] max-w-xs mt-6 bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">
+                <div className="w-full max-h-[450px] max-w-xs mt-6 bg-gray-100 hover:shadow-xl border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">
                     <a href="#">
                         <img className="p-8 rounded-t-lg  h-[300px] w-[400px] object-contain" src="https://images.hawesandcurtis.com/tr:q-80/logos/100_silk.jpg" alt="product image" />
                     </a>
@@ -105,7 +105,7 @@ function SingleCard() {
                         </div>
                     </div>
                 </div>
-                <div className="w-full max-h-[450px] max-w-xs mt-6 bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">
+                <div className="w-full max-h-[450px] max-w-xs mt-6 bg-gray-100 hover:shadow-xl border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">
                     <a href="#">
                         <img className="p-8 rounded-t-lg  h-[300px] w-[400px] object-contain" src="https://images.pexels.com/photos/356056/pexels-photo-356056.jpeg?cs=srgb&dl=pexels-pixabay-356056.jpg&fm=jpg" alt="product image" />
                     </a>
@@ -136,7 +136,7 @@ function SingleCard() {
                         </div>
                     </div>
                 </div>
-                <div className="w-full max-h-[450px] max-w-xs mt-6 bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">
+                <div className="w-full max-h-[450px] max-w-xs mt-6 bg-gray-100 hover:shadow-xl border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">
                     <a href="#">
                         <img className="p-8 rounded-t-lg  h-[300px] w-[400px] object-contain" src="https://pisces.bbystatic.com/image2/BestBuy_US/images/products/6525/6525491_sd.jpg" alt="product image" />
                     </a>
@@ -167,7 +167,7 @@ function SingleCard() {
                         </div>
                     </div>
                 </div>
-                <div className="w-full max-h-[450px] max-w-xs mt-6 bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">
+                <div className="w-full max-h-[450px] max-w-xs mt-6 bg-gray-100 hover:shadow-xl border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">
                     <a href="#">
                         <img className="p-8 rounded-t-lg h-[300px] w-[400px] object-contain" src="https://img.sonofatailor.com/images/customizer/product/hoodie/Black.jpg" alt="product image" />
                     </a>
