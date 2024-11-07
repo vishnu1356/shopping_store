@@ -7,7 +7,7 @@ function Login() {
             <div>
                 <h1 class="text-2xl sm:text-4xl md:text-5xl mt-16 mb-16  text-center">Login Here!</h1>
             </div>
-            <form class="max-w-md mx-auto">
+            <form class="max-w-md mx-auto md:mb-16">
             <div class="grid md:grid-cols-2 md:gap-6">
                 {/* first name */}
                     {/* <div class="relative z-0 w-full mb-5 group">

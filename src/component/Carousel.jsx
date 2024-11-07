@@ -5,29 +5,29 @@ import 'swiper/css';
 import 'swiper/css/pagination';
 import 'swiper/css/autoplay';
 import 'swiper/css/navigation';
-import Slider from '../assets/image/homesaty/Slider.jpeg';
-import Slider2 from '../assets/image/homesaty/Slider2.jpg';
-import Slider3 from '../assets/image/homesaty/Slider3.jpg';
-import Slider4 from '../assets/image/homesaty/Slider4.jpeg';
+import Slider from '../assets/image/jewellery.jpg';
+import Slider2 from '../assets/image/jewellery4.jpg';
+import Slider3 from '../assets/image/women4.jpg';
+import Slider4 from '../assets/image/women3.jpg';
 import { Icon } from '@iconify/react';
 
 const Carousel = () => {
     const swiperRef = useRef(null);
     const [currentIndex, setCurrentIndex] = useState(0); // State to track the current slide index
     const [dynamicContent, setDynamicContent] = useState([
-        { text: 'The Horizon Villa', button: 'Learn More' },
-        { text: 'The Silverton Chalet', button: 'Explore' },
-        { text: 'The Horizon Villa', button: 'Join Us' },
-        { text: 'The Si Cottage', button: 'Contact Us' },
+        { text: "Women's Collection", button: 'Learn More' },
+        { text: "Men's Collection", button: 'Explore' },
+        { text: "Electronics", button: 'Join Us' },
+        { text: "Jewellery", button: 'Contact Us' },
     ]);
     const [animateText, setAnimateText] = useState(false); // State to control h1 animation
 
-    const slideImages = [Slider2, Slider, Slider3, Slider4];
+    const slideImages = [Slider4, Slider2, Slider, Slider3];
 
     // Consolidated style objects for reuse
     const styles = {
-        container: { position: 'relative', height: '100vh', width: '100vw' },
-        slideImage: { width: '100%', height: '100%', objectFit: 'cover' },
+        container: { position: 'relative',  width: '100%' },
+        slideImage: { width: '100%', height: '100%',  },
         content: {
             position: 'absolute',
             top: '45%',
@@ -36,6 +36,7 @@ const Carousel = () => {
             color: 'white',
             textAlign: 'center',
             fontWeight: '600',
+        
         },
         button: {
             position: 'absolute',
@@ -90,6 +91,7 @@ const Carousel = () => {
                 direction="vertical"
                 slidesPerView={1}
                 spaceBetween={0}
+
                 speed={1000}  // Adjust transition speed here for smooth transition
                 mousewheel={true}
                 pagination={{ clickable: true }}
@@ -101,7 +103,7 @@ const Carousel = () => {
                 onReachEnd={handleReachEnd}
                 onSlideChange={handleSlideChange}
                 style={{
-                    width: '100vw',
+                    width: '100%',
                     height: '100vh',
                     overflow: 'hidden',
                 }}
@@ -114,28 +116,8 @@ const Carousel = () => {
                             style={styles.slideImage}
                         />
                         <div style={styles.content}>
-                            <h1
-                                style={{
-                                    color: 'white',
-                                    fontSize:'100px',
-                                    fontweight: '500',
-                                    opacity: animateText ? 1 : 0,
-                                    transform: animateText ? 'translateY(0)' : 'translateY(50px)',
-                                    transition: 'opacity 0.5s ease, transform 0.5s ease',
-                                }}
-                            >
-                                {content.text}
-                            </h1>
-                            {/* <button style={{
-                                background: 'rgba(0, 0, 0, 0.5)',
-                                color: 'white',
-                                padding: '10px 20px',
-                                border: 'none',
-                                borderRadius: '5px',
-                                cursor: 'pointer',
-                            }}>
-                                {content.button}
-                            </button> */}
+
+
                         </div>
                     </SwiperSlide>
                 ))}
@@ -170,9 +152,9 @@ const Carousel = () => {
                     <button
                         key={index}
                         style={{
-                            background: 'black',
+                            // background: 'black',
                             border: 'none',
-                            color: currentIndex === index ? 'green' : 'white',
+                            color: currentIndex === index ? 'white' : 'blue',
                             cursor: 'pointer',
                             fontSize: '24px',
                             transition: 'color 0.3s',
@@ -191,18 +173,20 @@ const Carousel = () => {
 
             {/* Custom Navigation Buttons */}
             <button
-                style={{ ...styles.button, bottom: '60px', left: '110px' }}
+                style={{ ...styles.button, bottom: '80px', left: '90px', color: "black",  }}
                 onClick={() => swiperRef.current.swiper.slidePrev()}
                 aria-label="Previous slide"
             >
-                <Icon icon="bi:arrow-left" /> Prev
+                {/* <Icon icon="bi:arrow-left" /> */}
+                Pre
             </button>
             <button
-                style={{ ...styles.button, bottom: '60px', right: '110px' }}
+                style={{ ...styles.button, bottom: '80px', right: '90px', color: 'black' }}
                 onClick={() => swiperRef.current.swiper.slideNext()}
                 aria-label="Next slide"
             >
-                Next <Icon icon="bi:arrow-right" />
+                {/* <Icon icon="bi:arrow-right" /> */}
+                Next
             </button>
         </div>
     );
