@@ -26,8 +26,8 @@ const Carousel = () => {
 
     // Consolidated style objects for reuse
     const styles = {
-        container: { position: 'relative',  width: '100%' },
-        slideImage: { width: '100%', height: '100%',  },
+        container: { position: 'relative', width: '100%' },
+        slideImage: { width: '100%', height: '100%' },
         content: {
             position: 'absolute',
             top: '45%',
@@ -36,7 +36,6 @@ const Carousel = () => {
             color: 'white',
             textAlign: 'center',
             fontWeight: '600',
-        
         },
         button: {
             position: 'absolute',
@@ -91,10 +90,9 @@ const Carousel = () => {
                 direction="vertical"
                 slidesPerView={1}
                 spaceBetween={0}
-
-                speed={1000}  // Adjust transition speed here for smooth transition
+                speed={1000} // Adjust transition speed here for smooth transition
                 mousewheel={true}
-                pagination={{ clickable: true }}
+                pagination={{ clickable: true }} // Keep clickable pagination, but hide bullets via CSS
                 modules={[Pagination, Mousewheel, Autoplay, Navigation]}
                 autoplay={{
                     delay: 2000,
@@ -115,16 +113,13 @@ const Carousel = () => {
                             alt={`Slide ${index + 1}`}
                             style={styles.slideImage}
                         />
-                        <div style={styles.content}>
-
-
-                        </div>
+                        <div style={styles.content}></div>
                     </SwiperSlide>
                 ))}
             </Swiper>
 
             {/* Current Slide Number Display */}
-            <div style={{
+            {/* <div style={{
                 position: 'absolute',
                 top: '50%',
                 left: '20px',
@@ -133,13 +128,13 @@ const Carousel = () => {
                 fontSize: '24px',
             }}>
                 {`Slide ${currentIndex + 1} of 4`}
-            </div>
+            </div> */}
 
             {/* Clickable Slide Numbers */}
             <div style={{
                 position: 'absolute',
                 top: '50%',
-                left: '20px',
+                right: '20px',  // Move to the right side of the screen
                 transform: 'translateY(-50%)',
                 color: 'white',
                 zIndex: '10',
@@ -152,9 +147,8 @@ const Carousel = () => {
                     <button
                         key={index}
                         style={{
-                            // background: 'black',
                             border: 'none',
-                            color: currentIndex === index ? 'white' : 'blue',
+                            color: currentIndex === index ? 'white' : 'black',
                             cursor: 'pointer',
                             fontSize: '24px',
                             transition: 'color 0.3s',
@@ -168,16 +162,15 @@ const Carousel = () => {
                     >
                         0{index + 1}
                     </button>
-                ))} 
+                ))}
             </div>
 
             {/* Custom Navigation Buttons */}
             <button
-                style={{ ...styles.button, bottom: '80px', left: '90px', color: "black",  }}
+                style={{ ...styles.button, bottom: '80px', left: '90px', color: "black" }}
                 onClick={() => swiperRef.current.swiper.slidePrev()}
                 aria-label="Previous slide"
             >
-                {/* <Icon icon="bi:arrow-left" /> */}
                 Pre
             </button>
             <button
@@ -185,9 +178,17 @@ const Carousel = () => {
                 onClick={() => swiperRef.current.swiper.slideNext()}
                 aria-label="Next slide"
             >
-                {/* <Icon icon="bi:arrow-right" /> */}
                 Next
             </button>
+
+            {/* Custom CSS to remove bullet points from Pagination */}
+            <style>
+                {`
+                    .swiper-pagination-bullet {
+                        display: none !important;
+                    }
+                `}
+            </style>
         </div>
     );
 };
