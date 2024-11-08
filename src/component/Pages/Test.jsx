@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
-import dummy from "../../assets/image/laptop.jpg";
-const ProductDetails = () => {
+
+const Test = () => {
   const [quantity, setQuantity] = useState(1);
 
   const increaseQuantity = () => setQuantity(quantity + 1);
@@ -94,4 +94,4 @@ const ProductDetails = () => {
   );
 };
 
-export default ProductDetails;
+export default Test;
