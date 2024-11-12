@@ -1,5 +1,5 @@
 import React from 'react';
-import Checkout from './Checkout';
+import Checkout from '../component/Checkout';
 
 const Cart = () => {
   return (

@@ -9,7 +9,7 @@ export default function App() {
   return (
     <>
     <Navbar />
-    <Carousel />
+
     <AllRoutes />
     <NewsLetter />
     <Footer />

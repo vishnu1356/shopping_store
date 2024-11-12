@@ -5,8 +5,9 @@ import SignUp from '../Pages/SignUp';
 import Login from '../Pages/Login';
 import ProductDetails from '../Pages/ProductDetails';
 import Test from '../Pages/Test';
-import Cart from '../component/Cart';
-import BillingAddress from '../component/BillingAddress';
+import BillingAddress from '../Pages/BillingAddress';
+import Thank from '../Pages/Thank';
+import Cart from '../Pages/Cart';
 
 function AllRoutes() {
   return (
@@ -17,6 +18,7 @@ function AllRoutes() {
       <Route path="/product/:id" element={<ProductDetails />} />
       <Route path="/cart" element={<Cart />} />
       <Route path="/billing" element={<BillingAddress />} />
+      <Route path="/thank" element={<Thank />} />
       <Route path="/test" element={<Test />} />
     </Routes>
   )

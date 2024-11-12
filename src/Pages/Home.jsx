@@ -2,10 +2,11 @@ import React from 'react'
 import SingleCard from "../component/SingleCard";
 import TestimonialSection from "../component/TestimonialSection";
 import FullAccrodian from "../component/FullAccrodian";
+import Carousel from "../component/Carousel";
 function Home() {
     return (
         <div>
-
+                <Carousel />
             <h1 className="text-2xl sm:text-4xl md:text-5xl mt-16 mb-16  text-center">OUR TRENDY PRODUCTS!</h1>
 
             <SingleCard />
