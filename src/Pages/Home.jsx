@@ -1,7 +1,7 @@
 import React from 'react'
-import FullAccrodian from "../../component/FullAccrodian";
-import SingleCard from "../../component/SingleCard";
-import TestimonialSection from "../../component/TestimonialSection";
+import SingleCard from "../component/SingleCard";
+import TestimonialSection from "../component/TestimonialSection";
+import FullAccrodian from "../component/FullAccrodian";
 function Home() {
     return (
         <div>

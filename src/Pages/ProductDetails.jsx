@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import dummy from "../../assets/image/laptop.jpg";
+// import dummy from "../../assets/image/laptop.jpg";
 const ProductDetails = () => {
   const [quantity, setQuantity] = useState(1);
 
