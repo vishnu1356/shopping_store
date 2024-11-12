@@ -1,12 +1,10 @@
 import React from 'react';
-import Checkout from '../Checkout';
+import Checkout from './Checkout';
 
-const Test = () => {
+const Cart = () => {
   return (
     <>
-
-      <h1 className='text-4xl font-bold mb-4 md:mb-16 text-center mt-4 md:mt-12'>You are on Test Page!</h1>
-      {/* <div className="p-5 w-4/5 mx-auto">
+      <div className="p-5 w-4/5 mx-auto">
         <h2 className="text-4xl font-bold mb-4 md:mb-16 text-center mt-4 md:mt-12">Your cart items</h2>
         <table className="w-full border-collapse mt-4">
           <thead>
@@ -54,11 +52,9 @@ const Test = () => {
         </div>
       </div>
 
-      <Checkout /> */}
-
-
+      <Checkout />
     </>
   );
 };
 
-export default Test;
+export default Cart;
